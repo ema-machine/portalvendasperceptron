@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#800080"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtMensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Portal de Vendas"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btSobre"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btSobre"
+        android:layout_width="71dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="600dp"
+        android:onClick="OnSobre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/persona" />
+
+    <ImageView
+        android:id="@+id/btMercadoLivre"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:onClick="OnMercadoLivre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensagem"
+        app:srcCompat="@drawable/mercado_livre" />
+
+    <ImageView
+        android:id="@+id/btBuscape"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="64dp"
+        android:onClick="OnBuscape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensagem"
+        app:srcCompat="@drawable/buscape" />
+
+    <ImageView
+        android:id="@+id/btEbay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onEbay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btMercadoLivre"
+        app:srcCompat="@drawable/ebay" />
+
+    <ImageView
+        android:id="@+id/btWebmotors"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="64dp"
+        android:onClick="OnWebmotors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btBuscape"
+        app:srcCompat="@drawable/webmotors" />
+
+    <ImageView
+        android:id="@+id/btAmericanas"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:onClick="OnAmericanas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btEbay"
+        app:srcCompat="@drawable/americanas" />
+
+    <ImageView
+        android:id="@+id/btNetshoes"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:onClick="OnNetshoes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btWebmotors"
+        app:srcCompat="@drawable/netshoes" />
+
+    <ImageView
+        android:id="@+id/btMagalu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:onClick="OnMagalu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAmericanas"
+        app:srcCompat="@drawable/magalu" />
+
+    <ImageView
+        android:id="@+id/btSubmarino"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:onClick="OnSubmarino"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btNetshoes"
+        app:srcCompat="@drawable/submarino" />
+
+    <ImageView
+        android:id="@+id/btMobly"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:onClick="OnMobly"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btMagalu"
+        app:srcCompat="@drawable/mobly" />
+
+    <ImageView
+        android:id="@+id/btAliexpress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:onClick="OnAliexpress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btSubmarino"
+        app:srcCompat="@drawable/aliexpress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
